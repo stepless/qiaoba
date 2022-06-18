@@ -1,0 +1,97 @@
+/* 公用代码 */
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+.clearfix::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+
+.contains{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6a9a2;
+    position:relative;
+}
+
+.contains .main{
+}
+.contains .main .cap{
+    
+}
+.cap .cap-head .cap-top{
+    background-color: #c7606c;
+    height:180px;
+    width:268px;
+    border: 4px solid black;
+    border-radius: 50% 50% 50% 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.cap .cap-head .cap-top .cap-lihua{
+    position:absolute;
+    top:16px;
+    left:-8px;
+    background-color: #fff;
+    height:180px;
+    width:280px;
+    border: 4px solid black;
+    border-radius: 50% 50% 50% 50%;
+}
+.cap .cap-head .cap-top .lihua-bottom{
+    top:38px;
+    left:-16px;
+    width:300px;
+    background-color: #c7606c;
+}
+
+.cap .cap-head .hua{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #fff;
+    border: 4px solid black;
+    top:-15px;
+    left:50%;
+    transform: translate(-50%);
+    border-radius:50%;
+    z-index: 3;
+}
+.cap .cap-head .hua .huaxin{
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border-radius: 50%;
+}
+.cap .cap-head .hua-bian{
+    border:1px solid red;
+    position:absolute;
+    width: 100%;
+    top:67px;
+    display: flex;
+    justify-content:center;
+}
+.cap .cap-head .hua-bian>div{
+    border:4px solid black;
+    width:48px;
+    height: 30px;
+    border-radius:30%/50%; 
+    background-color: #fff;
+}
+.cap .cap-head .hua-bian .bian-left{
+    transform:rotate(-45deg);
+}
+.cap .cap-head .hua-bian .bian-right{
+    transform:rotate(45deg);
+}
