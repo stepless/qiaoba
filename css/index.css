@@ -145,16 +145,17 @@
     margin-top: 64px;
 }
 .cap .cap-head .face{
-    height: 142px;
+    height: 156px;
     width: 240px;
     border:1px solid red;
     z-index: 6;
-    margin-top:43px;
+    margin-top:52px;
     overflow: hidden;
 }
 .cap .cap-head .face .face-back .back-top{
-    width: 100%;
-    height:145px;
+    width: 230px;
+    margin:0 auto;
+    height:116px;
     border: 4px solid black;
     border-radius: 50%;
     background-color: #eecb8c;
@@ -164,7 +165,7 @@
     display: block;
     width: 120%;
     left: -20px;
-    height: 36px;
+    height: 54px;
     background-color: #c7606c;
     top: 52px;
     position:absolute;
@@ -198,6 +199,10 @@
     height: 60px;
     border:4px solid black;
     border-radius: 50%;
-    margin-top:-9px;
+    margin-top:-25px;
     background-color: #eecb8c;
+}
+
+.cap .cap-head .face .face-organs{
+    
 }
