@@ -47,7 +47,7 @@
 }
 
 
-.cap .cap-head .cap-top .cap-lihua{
+.cap .cap-head .cap-top .cap-tie{
     position:absolute;
     top:16px;
     left:-8px;
@@ -57,13 +57,14 @@
     border: 4px solid black;
     border-radius: 50% 50% 50% 50%;
 }
-.cap .cap-head .cap-top .lihua-bottom{
+.cap .cap-head .cap-top .tie-bottom{
     top:38px;
     left:-16px;
     width:300px;
     background-color: #c7606c;
 }
 
+/* 花 */
 .cap .cap-head .hua{
     width: 100px;
     height: 100px;
@@ -76,32 +77,94 @@
     border-radius:50%;
     z-index: 3;
 }
-.cap .cap-head .hua .huaxin{
+.cap .cap-head .hua .stamen{
     width: 24px;
     height: 24px;
     background-color: black;
     border-radius: 50%;
 }
-.cap .cap-head .hua-bian{
+.cap .cap-head .hua-side{
     position:absolute;
     width: 100%;
     top:67px;
     display: flex;
     justify-content:center;
 }
-.cap .cap-head .hua-bian>div{
+.cap .cap-head .hua-side>div{
     border:4px solid black;
     width:48px;
     height: 30px;
     border-radius:30%/50%; 
     background-color: #fff;
 }
-.cap .cap-head .hua-bian .bian-left{
+.cap .cap-head .hua-side .side-left{
     transform:rotate(-45deg);
 }
-.cap .cap-head .hua-bian .bian-right{
+.cap .cap-head .hua-side .side-right{
     transform:rotate(45deg);
 }
+
+/* 耳朵 */
+.cap-head .ear{
+    width: 320px;
+    top:83px;
+    display: flex;
+    justify-content:space-between;
+    z-index: 3;
+}
+.ear>div{
+    border:6px solid black;
+    width:70px;
+    height: 62px;
+    transform:rotate(8deg) scale(.7);
+    background-color: #eecb8c;
+    border-top-left-radius: 20% 40%;
+    border-top-right-radius: 100% 40%;
+    overflow: hidden;
+}
+.ear>div.ear-right{
+    transform:rotate(-8deg) scale(.7);
+    border-top-left-radius: 100% 40%;
+    border-top-right-radius: 20% 40%;
+}
+.ear>div .earhole{
+    width:40px;
+    height: 60px;
+    border-radius:50%;
+    transform: rotate(-59deg);
+    border:4px solid black;
+    background-color: #503949;
+    position: absolute;
+    top:11px;
+    left: -8px;
+}
+.ear>div .earhole::after{
+    content:'';
+    display: block;
+    border:4px solid black;
+    width:20px;
+    height: 50px;
+    border-bottom-right-radius: 50% 50%;
+    position: absolute;
+    top:-3px;
+    left:-9px;
+    transform: rotate(28deg);
+    background-color: #eecb8c;
+    border-top:none;
+}
+.ear>div.ear-right .earhole{
+    top:11px;
+    left:32px;
+    transform: rotate(59deg);
+}
+.ear>div.ear-right .earhole::after{
+    border-bottom-right-radius: 50% 50%;
+    top:-3px;
+    left:9px;
+    transform: rotate(-28deg);
+}
+
+/* 帽檐 */
 .cap .cap-head .bongrace{
     margin-top:-90px;
     position: relative;
@@ -111,7 +174,7 @@
     position: relative;
     overflow: hidden;
 }
-.cap .cap-head .bongrace .bongrace-top{
+.bongrace .bongrace-top{
     width:500px;
     height: 400px;
     border:4px solid black;
@@ -119,7 +182,7 @@
     overflow: hidden;
 
 }
-.cap .cap-head .bongrace .bongrace-bottom{
+.bongrace .bongrace-bottom{
     width: 352px;
     height: 200px;
     margin-top: -5px;
@@ -128,7 +191,7 @@
     overflow: hidden; 
     border-radius: 10% 10% 50% 50%; 
 }
-.cap .cap-head .bongrace .bongrace-top-n{
+.bongrace .bongrace-top-n{
     width: 380px;
     height:360px;
     margin-top:41px;
@@ -136,7 +199,7 @@
     border-radius: 50%;
     background-color:#9d4357;
 }
-.cap .cap-head .bongrace .bongrace-top-n::after{
+.bongrace .bongrace-top-n::after{
     content:'';
     display: block;
     width:380px;
@@ -144,6 +207,8 @@
     background-color: #c7606c;
     margin-top: 64px;
 }
+
+/* face */
 .cap .cap-head .face{
     /* height: 170px; */
     width: 240px;
@@ -151,7 +216,7 @@
     margin-top:59px;
     overflow: hidden;
 }
-.cap .cap-head .face .face-back .back-top{
+.face .face-back .back-top{
     width: 230px;
     margin:0 auto;
     height:116px;
@@ -159,7 +224,7 @@
     border-radius: 50%;
     background-color: #eecb8c;
 }
-.cap .cap-head .face .face-back .back-top::after{
+.face .face-back .back-top::after{
     content:'';
     display: block;
     width: 120%;
@@ -169,7 +234,7 @@
     top: 52px;
     position:absolute;
 }
-.cap .cap-head .face .face-back .back-left{
+.face .face-back .back-left{
     width: 120px;
     height: 80px;
     position:absolute;
@@ -181,7 +246,7 @@
     z-index: 2;
     border-radius: 5px;
 }
-.cap .cap-head .face .face-back .back-right{
+.face .face-back .back-right{
     width: 120px;
     height: 80px;
     position:absolute;
@@ -193,7 +258,7 @@
     z-index: 2;
     border-radius: 5px;
 }
-.cap .cap-head .face .face-back .back-bottom{
+.face .face-back .back-bottom{
     width: 176px;
     height: 90px;
     border:4px solid black;
@@ -202,7 +267,7 @@
     background-color: #eecb8c;
 }
 
-.cap .cap-head .face .face-organs{
+.face .face-organs{
     margin-left: auto;
     margin-right: auto;
     width:180px;
