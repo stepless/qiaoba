@@ -22,8 +22,10 @@
 
 
 .contains{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    min-width: 400px;
+    min-height: 600px;
     background-color: #e6a9a2;
     position:relative;
 }
@@ -32,6 +34,9 @@
 }
 .contains .main .cap{
     
+}
+.cap .cap-head{
+    position: relative;
 }
 .cap .cap-head .cap-top{
     background-color: #c7606c;
@@ -104,13 +109,29 @@
     transform:rotate(45deg);
 }
 
+/* 鹿角 */
+.cap-head .antler{
+    width:400px;
+    height: 200px;
+    border:1px solid red;
+    top:10px;
+    display: flex;
+    justify-content:space-between;
+}
+.cap-head .antler .antler-root{
+    /* width:27px;
+    height: 64px;
+    border:4px solid black;
+     */
+}
+
 /* 耳朵 */
 .cap-head .ear{
     width: 320px;
     top:83px;
     display: flex;
     justify-content:space-between;
-    z-index: 3;
+    z-index: 4;
 }
 .ear>div{
     border:6px solid black;
@@ -388,4 +409,122 @@
     border-bottom-right-radius:50% 40%;
     border-bottom-left-radius:50% 40%;
     margin-top:-10px;
+}
+
+.cap .limbs{
+    width:340px;
+    height: 200px;
+    border:1px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top:-70px;
+}
+.cap .limbs .limbs-body{
+    border:5px solid black;
+    width:219px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:50%;
+    background-color: #eecb8c;
+    position: relative;
+}
+.cap .limbs .limbs-body::after{
+    content:'';
+    display:block;
+    width: 300px;
+    height: 100px;
+    position:absolute;
+    top: 132px;
+    left:-30px;
+    background-color: #e6a9a2;
+}
+.limbs .limbs-body .collar{
+    width:200px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    z-index: 4;
+}
+.limbs .limbs-body .collar .neck{
+    width:110px;
+    height: 100px;
+    background-color: #0c0603;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin-top:-42px;
+}
+.limbs .limbs-body .collar .neck .nei{
+    width:86px;
+    height: 70px;
+    background-color: #eecb8c;
+    border:4px solid black;
+    position: relative;
+    border-radius: 50%;
+}
+.limbs .limbs-body .collar .neck-link{
+    width:22px;
+    height: 30px;
+    margin-left: 54px;
+    margin-right: 50px;
+    position: absolute;
+    top:48px;
+    transform: skew(-18deg);
+    background-color: #0c0603;
+}
+.limbs .limbs-body .collar .bead{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #146ca9;
+    border:5px solid black;
+    border-radius: 50%;
+    top:65px;
+}
+.limbs .limbs-body .collar .bead .bead-nei{
+    width:38px;
+    height: 38px;
+    margin-left: -2px;
+    margin-top: -2px;
+    background-color: #146ca9;
+    border:4px solid black;
+    border-radius: 50%;
+}
+.collar .bead .bead-nei .highlight{
+    height: 23px;
+    width: 23px;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 50%;
+}
+.limbs .limbs-body .pants{
+    width:222px;
+    height: 100px;
+    border:5px solid black;
+    border-radius: 50%;
+    top:94px;
+    background-color: #733847;
+}
+.limbs .limbs-body .arse{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    width: 300px;
+    position: relative;
+    z-index: 2;
+}
+.limbs .limbs-body .arse>div{
+    width:117px;
+    height: 45px;
+    border:5px solid black;
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    background-color: #733847;
+}
+.limbs .limbs-body .arse .arse-left{
+    margin-right: -8px;
+}
+.limbs .limbs-body .arse .arse-right{
+    margin-left: -8px;
 }
