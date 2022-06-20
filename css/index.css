@@ -20,11 +20,18 @@
     transform:translate(-50%);
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+    min-width: 550px;
+    min-height: 600px;
+    background-color: #e6a9a2;
+}
 
 .contains{
     width: 100%;
     height: 100vh;
-    min-width: 400px;
+    min-width: 550px;
     min-height: 600px;
     background-color: #e6a9a2;
     position:relative;
@@ -618,4 +625,106 @@
     background-color: #733847;
     border-radius: 50%;
     top:-13px;
+}
+
+/* 腿 */
+.leg{
+    width:240px;
+    position:relative;
+    border:1px solid red;
+    margin-top:-40px;
+    display: flex;
+    justify-content: center;
+}
+.leg>div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+.leg .leg-left{
+    margin-right: 20px;
+}
+.leg .leg-right{
+    margin-left: 20px;
+}
+.leg .leg-foot{
+    width:12px;
+    height: 70px;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    background-color: #eecb8c;
+    margin-left: -8px;
+    margin-bottom:1px;
+}
+.leg .foot{
+    width:50px;
+    height: 28px;
+    position:relative;
+    background-color: #eecb8c;
+    border-top-right-radius: 50% 90%;
+    border-top-left-radius: 50% 90%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border:4px solid black;
+    overflow: hidden;
+}
+.leg .foot-back{
+    width:30px;
+    height: 17px;
+    background-color: #eecb8c;
+    position: absolute;
+    bottom: 0px;
+    border-bottom: 4px solid black;
+    right:-4px;
+    border-right: 4px solid black;
+    border-top-right-radius: 30% 50%;
+    border-bottom-right-radius: 30% 50%;
+}
+.leg .foot .foot-hoof{
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: #6c5725;
+    position: absolute;
+    top:0px;
+    left:-10px;
+    border:4px solid black;
+    transform:rotate(-30deg)
+}
+.leg .foot .foot-hoof .foot-gap{
+    height: 30px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(70deg);
+    position:absolute;
+    top:-1px;
+    left:8px;
+}
+
+
+.leg .leg-right .leg-foot{
+    margin-left: 0;
+    margin-right: -8px;
+}
+
+.leg .leg-right .foot-back{
+    right:0px;
+    left: -4px;
+    border-left: 4px solid black;
+    border-right: none;
+    border-top-left-radius: 30% 50%;
+    border-bottom-left-radius: 30% 50%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.leg .leg-right .foot .foot-hoof{
+    left:23px;
+    border:4px solid black;
+    transform:rotate(30deg)
+}
+.leg .leg-right .foot .foot-hoof .foot-gap{
+    transform: rotate(-70deg);
+    top:1px;
+    left:11px;
 }
