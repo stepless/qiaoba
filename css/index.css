@@ -412,7 +412,7 @@
 }
 
 .cap .limbs{
-    width:340px;
+    width:550px;
     height: 200px;
     border:1px solid green;
     margin-left: auto;
@@ -441,6 +441,87 @@
     left:-30px;
     background-color: #e6a9a2;
 }
+
+/* 手臂 */
+.limbs .limbs-body .arm{
+    width:500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+}
+.limbs .limbs-body .arm>div{
+    width:250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.limbs .limbs-body .arm .hand{
+    height: 36px;
+    width: 24px;
+    border: 4px solid black;
+    border-top-right-radius: 100% 50%;
+    border-bottom-right-radius: 100% 50%;
+    margin-right: -8px;
+    background-color: #eecb8c;
+}
+.limbs .limbs-body .arm .hoof{
+    height: 38px;
+    width: 38px;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin-right:-17px;
+    background-color: #725416;
+}
+.limbs .limbs-body .arm .hoof-space{
+    width:24px;
+    height: 24px;
+    border-top:4px solid black;
+    border-right: 4px solid black;
+    background-color: #e6a9a2;
+    transform:rotate(45deg);
+    margin-right: -19px;
+    border-radius: 20%;
+}
+.limbs .limbs-body .arm .elbow{
+    background-color: #eecb8c;
+    width:220px;
+    height: 22px;
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+    transform: perspective(1em) rotateY(3deg);
+	transform-origin:left;
+}
+
+
+
+.limbs .limbs-body .arm .arm-right .hand{
+    border-top-left-radius: 100% 50%;
+    border-bottom-left-radius: 100% 50%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    margin-left: -8px;
+    margin-right: 0px;
+}
+.limbs .limbs-body .arm .arm-right .hoof{
+    margin-left:-17px;
+    margin-right: 0px;
+    z-index: -1;
+}
+.limbs .limbs-body .arm .arm-right .hoof-space{
+
+    border-top:none;
+    border-right:none;
+    border-bottom:4px solid black;
+    border-left: 4px solid black;
+    margin-left: -19px;
+    margin-right: 0px;
+}
+.limbs .limbs-body .arm .arm-right .elbow{
+    transform: perspective(1em) rotateY(-3deg);
+	transform-origin:right;
+}
+
 .limbs .limbs-body .collar{
     width:200px;
     display: flex;
