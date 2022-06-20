@@ -32,15 +32,8 @@ body{
     width: 100%;
     height: 100vh;
     min-width: 550px;
-    min-height: 600px;
     background-color: #e6a9a2;
     position:relative;
-}
-
-.contains .main{
-}
-.contains .main .cap{
-    
 }
 .cap .cap-head{
     position: relative;
@@ -119,18 +112,72 @@ body{
 /* 鹿角 */
 .cap-head .antler{
     width:400px;
-    height: 200px;
-    border:1px solid red;
-    top:10px;
+    top:  0px;
     display: flex;
     justify-content:space-between;
 }
+.cap-head .antler>div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 150px;
+}
+.cap-head .antler .antler-space{
+    width:62px;
+    height: 60px;
+    border:4px solid black;
+    z-index: 4;
+    position:absolute;
+    top:0px;
+    border-top:none;
+    background-color: #e6a9a2;
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+}
+.cap-head .antler .antler-branch{
+    width: 130px;
+    height: 80px;
+    background-color: #b18247;
+    border:4px solid black;
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+}
 .cap-head .antler .antler-root{
-    /* width:27px;
+    width:27px;
     height: 64px;
     border:4px solid black;
-     */
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top:none;
+    background-color: #b18247;
+    transform: rotate(-17deg);
+    margin-top:-9px;
+    margin-left: 49px;
 }
+.cap-head .antler .antler-top{
+    width: 130px;
+    position:absolute;
+    top:-16px;
+    display: flex;
+    justify-content: space-between;
+}
+.cap-head .antler .antler-top>div{
+    width: 38px;
+    height: 20px;
+    background-color: #b18247;
+    border:4px solid black;
+    border-bottom:none;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+}
+
+
+.cap-head .antler .antler-right .antler-root{
+    transform: rotate(17deg);
+    margin-left: 0px;
+    margin-right: 49px;
+}
+
 
 /* 耳朵 */
 .cap-head .ear{
@@ -421,7 +468,6 @@ body{
 .cap .limbs{
     width:550px;
     height: 200px;
-    border:1px solid green;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -631,7 +677,6 @@ body{
 .leg{
     width:240px;
     position:relative;
-    border:1px solid red;
     margin-top:-40px;
     display: flex;
     justify-content: center;
